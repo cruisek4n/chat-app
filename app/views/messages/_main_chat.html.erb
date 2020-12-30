@@ -13,37 +13,7 @@
 </div>
 
 <div class="messages">
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        Ayaka
-      </div>
-      <div class="message-date">
-        2020/12/25(Fri) 14:52:30
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        오빠 메리크리스마스❤️
-      </div>
-    </div>
-  </div>
-
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">
-        Jeonghoon
-      </div>
-      <div class="message-date">
-        2020/12/25(Fri) 15:23:30
-      </div>
-    </div>
-    <div class="lower-message">
-      <div class="message-content">
-        아야카 사랑해 메리크리스마스❤️
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
